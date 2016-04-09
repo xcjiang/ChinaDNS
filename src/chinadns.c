@@ -124,7 +124,7 @@ static id_addr_t *queue_lookup(uint16_t id);
 static id_addr_t id_addr_queue[ID_ADDR_QUEUE_LEN];
 static int id_addr_queue_pos = 0;
 
-#define EMPTY_RESULT_DELAY 0.3f
+#define EMPTY_RESULT_DELAY 0.1f
 #define DELAY_QUEUE_LEN 128
 static delay_buf_t delay_queue[DELAY_QUEUE_LEN];
 static void schedule_delay(uint16_t query_id, const char *buf, size_t buflen,
